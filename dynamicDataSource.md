@@ -150,10 +150,13 @@ class DynamicDataSourceApplicationTests {
 
 
         dataSourceTest.notAnnotation();
+        System.out.println();
 
         dataSourceTest.defaultDataSource();
+        System.out.println();
 
         dataSourceTest.oneDataSource();
+        System.out.println();
 
         dataSourceTest.twoDataSource();
 
@@ -167,14 +170,19 @@ class DynamicDataSourceApplicationTests {
 
 ```log
 无注解！！！
+
 main dataSource is > > > > one < < < <
 defaultDataSource
 main----------------------------------> dataSource remove <----------------------------------
+
 main dataSource is > > > > one < < < <
 oneDataSource
 main----------------------------------> dataSource remove <----------------------------------
+
 main dataSource is > > > > two < < < <
 twoDataSource
 main----------------------------------> dataSource remove <----------------------------------
+
+
 ```
 

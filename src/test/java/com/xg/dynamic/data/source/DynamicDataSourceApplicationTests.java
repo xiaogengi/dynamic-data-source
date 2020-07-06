@@ -17,10 +17,13 @@ class DynamicDataSourceApplicationTests {
 
 
         dataSourceTest.notAnnotation();
+        System.out.println();
 
         dataSourceTest.defaultDataSource();
+        System.out.println();
 
         dataSourceTest.oneDataSource();
+        System.out.println();
 
         dataSourceTest.twoDataSource();
 
