@@ -37,7 +37,8 @@ public class DynamicDataSourceAutoConfig {
 
 
     @Primary
-    @Bean
+    // 使用SqlSessionFactory 的时候，只需要把当前 bean 赋值到 SqlSessionFactory 的 dataSource 中即可
+    @Bean("dataSource")
     public DynamicDataSource dataSource(@Qualifier("oneDataSource") DataSource oneDataSource, @Qualifier("twoDataSource") DataSource twoDataSource){
         HashMap<Object, Object> map = new HashMap<>();
         map.put(DynamicDataSourceEnum.ONE_DATA_SOURCE.getDataSourceName(), oneDataSource);
